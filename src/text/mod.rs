@@ -1,4 +1,5 @@
 /// A module that contains functions and objects relating to fontconfig
+#[cfg(target_os = "linux")]
 pub mod fontconfig;
 
 use rusttype::{point, Font, Scale, VMetrics};

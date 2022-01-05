@@ -2,6 +2,7 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::path::{Path, PathBuf};
 
+#[cfg(target_os = "linux")]
 use xdg::BaseDirectories;
 
 use xml::reader::{EventReader, XmlEvent};
